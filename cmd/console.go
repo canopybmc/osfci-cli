@@ -7,8 +7,8 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/term"
 
-	"github.com/canopy-ai/osfci-cli/internal/auth"
-	"github.com/canopy-ai/osfci-cli/internal/console"
+	"github.com/canopybmc/osfci-cli/internal/auth"
+	"github.com/canopybmc/osfci-cli/internal/console"
 )
 
 var (

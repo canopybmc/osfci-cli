@@ -1,6 +1,6 @@
 package main
 
-import "github.com/canopy-ai/osfci-cli/cmd"
+import "github.com/canopybmc/osfci-cli/cmd"
 
 func main() {
 	cmd.Execute()

@@ -10,7 +10,7 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/term"
 
-	"github.com/canopy-ai/osfci-cli/internal/auth"
+	"github.com/canopybmc/osfci-cli/internal/auth"
 )
 
 // tokenResponse matches the JSON from /user/{username}/get_token.

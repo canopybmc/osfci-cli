@@ -7,8 +7,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/canopy-ai/osfci-cli/internal/api"
-	"github.com/canopy-ai/osfci-cli/internal/auth"
+	"github.com/canopybmc/osfci-cli/internal/api"
+	"github.com/canopybmc/osfci-cli/internal/auth"
 )
 
 var (

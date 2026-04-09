@@ -9,7 +9,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/canopy-ai/osfci-cli/internal/auth"
+	"github.com/canopybmc/osfci-cli/internal/auth"
 )
 
 // serverModel matches the JSON from /ci/get_server_models.

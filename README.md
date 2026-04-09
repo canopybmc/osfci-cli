@@ -5,13 +5,13 @@ CLI client for [osfci.tech](https://osfci.tech), HPE's remote OpenBMC developmen
 ## Install
 
 ```bash
-go install github.com/canopy-ai/osfci-cli@latest
+go install github.com/canopybmc/osfci-cli@latest
 ```
 
 Or build from source:
 
 ```bash
-git clone https://github.com/canopy-ai/osfci-cli
+git clone https://github.com/canopybmc/osfci-cli
 cd osfci-cli
 go build -o osfci .
 ```

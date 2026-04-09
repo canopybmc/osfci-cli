@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/canopy-ai/osfci-cli/internal/auth"
+	"github.com/canopybmc/osfci-cli/internal/auth"
 )
 
 // Client wraps an HTTP client with OSFCI authentication.
