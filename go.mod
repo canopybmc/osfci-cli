@@ -1,4 +1,4 @@
-module github.com/canopy-ai/osfci-cli
+module github.com/canopybmc/osfci-cli
 
 go 1.25.7
 

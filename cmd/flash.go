@@ -12,7 +12,7 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/spf13/cobra"
 
-	"github.com/canopy-ai/osfci-cli/internal/api"
+	"github.com/canopybmc/osfci-cli/internal/api"
 )
 
 var (
