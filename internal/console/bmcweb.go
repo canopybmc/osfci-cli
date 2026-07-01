@@ -73,10 +73,6 @@ func (s *BMCWebSession) Run() error {
 	s.oldState = oldState
 	defer s.restore()
 
-	sigCh := make(chan os.Signal, 1)
-	signal.Notify(sigCh, syscall.SIGWINCH)
-	defer signal.Stop(sigCh)
-
 	intCh := make(chan os.Signal, 1)
 	signal.Notify(intCh, syscall.SIGINT, syscall.SIGTERM)
 	defer signal.Stop(intCh)

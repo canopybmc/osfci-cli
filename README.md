@@ -2,6 +2,8 @@
 
 CLI client for [osfci.tech](https://osfci.tech), HPE's remote OpenBMC development platform (part of the [Open System Firmware CI](https://github.com/opencomputeproject/OSF-OSFCI) project). Allocate physical HPE ProLiant Gen11 servers, flash firmware, access serial consoles, and control power — all from the terminal.
 
+> **Note**: Microsoft Windows support requires a build from source process.
+
 ## Install
 
 ```bash
@@ -198,7 +200,7 @@ curl -sk -u root:0penBmc \
 
 The CLI communicates with the OSFCI gateway at `osfci.tech`:
 
-```
+```text
 osfci-cli  --(HTTPS)--> osfci.tech gateway --(HTTP)--> controller node
                               |                              |
                               |  reverse proxy (port 443)    |  EM100 emulators

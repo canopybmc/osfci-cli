@@ -131,9 +131,9 @@ func (s *Session) Run() error {
 	s.oldState = oldState
 	defer s.restore()
 
-	// Handle SIGWINCH for terminal resize.
+	// Handle terminal resize signal where supported.
 	sigCh := make(chan os.Signal, 1)
-	signal.Notify(sigCh, syscall.SIGWINCH)
+	notifyResizeSignal(sigCh)
 	defer signal.Stop(sigCh)
 
 	// Handle SIGINT/SIGTERM gracefully.
@@ -164,7 +164,7 @@ func (s *Session) Run() error {
 		for {
 			select {
 			case sig := <-sigCh:
-				if sig == syscall.SIGWINCH {
+				if isResizeSignal(sig) {
 					s.sendResize()
 				}
 			case <-intCh:
